@@ -1,34 +1,136 @@
-body {
-  margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+ *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
-.card {
-  background: white;
-  max-width: 700px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+body{
+background:linear-gradient(135deg,#00b4ff,#00e5ff);
+animation:bg 8s ease infinite;
+background-size:400% 400%;
 }
 
-h2 {
-  color: #0d47a1;
-  border-bottom: 2px solid #0d47a1;
-  padding-bottom: 8px;
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
-h3 {
-  color: #222;
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
 }
 
-p {
-  color: #555;
-  font-size: 17px;
+.logo{
+width:170px;
+animation:float 3s ease-in-out infinite;
+filter:drop-shadow(0 0 20px white);
 }
 
-b {
-  color: #d32f2f;
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+.hero h1{
+font-size:50px;
+margin-top:20px;
+}
+
+.hero p{
+font-size:22px;
+margin:15px 0;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#ff3d00;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff6d00;
+transform:scale(1.08);
+}
+
+.info{
+padding:40px;
+text-align:center;
+color:white;
+font-size:20px;
+}
+
+.card{
+background:rgba(255,255,255,.95);
+max-width:800px;
+margin:30px auto;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+animation:show 1s;
+}
+
+@keyframes show{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.card h2{
+color:#0056d6;
+border-bottom:3px solid #0056d6;
+padding-bottom:10px;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-top:20px;
+}
+
+.card b{
+color:#d32f2f;
+}
+
+footer{
+margin-top:50px;
+padding:20px;
+background:#111;
+color:white;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.logo{
+width:130px;
+}
+
+.card{
+margin:20px;
+}
+
 }
