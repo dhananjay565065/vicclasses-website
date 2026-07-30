@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIC Classes Deulgaon Raja</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#222;
+}
+
+header{
+background:#0b57d0;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+header h1{
+font-size:40px;
+}
+
+header p{
+font-size:20px;
+margin-top:10px;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>VIC Classes</h1>
+<p>Deulgaon Raja</p>
+<p>JEE | NEET | MHT-CET Coaching</p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>About Us</h2>
+<p>
+VIC Classes provides quality coaching for JEE Main,
+NEET and MHT-CET with experienced faculty and
+excellent results.
+</p>
+</div>
+
+<div class="card">
+<h2>Our Results</h2>
+
+<p>🏆 JEE Main 2026 Topper</p>
+<p><b>Dhananjay Palve 97percentilescoreinjeemains</b></p>
+
+<br>
+
+<p>🏆 NEET 2026 Topper</p>
+<p><b>kishor kharat 585mark,pranay mhashke 570 score  </b></p>
+ 
+
+</div>
+
+<div class="card">
+<h2>Contact</h2>
+
+<p>📍 Deulgaon Raja, Maharashtra</p>
+
+<p>📞 +918806733510</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 VIC Classes | All Rights Reserved
+
+</footer>
+
+</body>
+</html>
